@@ -1,0 +1,29 @@
+.canvas-container{
+  margin-bottom: 20px;
+  border: 1px solid #999;
+}
+
+.imgBox{
+  height: 150px;
+  width: 200px;
+}
+.col-md-2{
+  margin: 30px;
+margin-left: 0px;
+margin-top: 0px;
+}
+
+.imgButton{
+  background: url(upload.png) no-repeat;
+  width: 200px;
+  height: 150px;
+  border: 1px solid #999;
+}
+.upload-column{
+  border-left: 1px solid #999;
+  margin-left: 31px;
+}
+.row-bottom{
+  border-top: 1px solid black;
+    padding: 20px;
+}

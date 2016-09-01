@@ -1,0 +1,65 @@
+<!-- index.html -->
+<!doctype html>
+
+<!-- ASSIGN OUR ANGULAR MODULE -->
+<html ng-app="photoApi">
+<head>
+    <!-- META -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Optimize mobile viewport -->
+
+    <title>Wingify</title>
+
+    <!-- SPELLS -->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script><!-- load jquery -->
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script><!-- load bootstrap-->
+    <script src="bower_components/angular/angular.js"></script><!-- load angular -->
+    <script src="main.js"></script>
+    <script src="bower_components/fabric.js/dist/fabric.js"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <!-- html -->
+
+</head>
+<!-- SET THE CONTROLLER AND GET ALL TODOS -->
+<body ng-controller="picController">
+
+<div class="container">
+<div class="row" style="height:30px;">
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <canvas class="mainCanvas" id="c" width="1150px" height="400px"></canvas>
+  </div>
+</div>
+<div class="row" style="height:10%;">
+</div>
+<div class="row" style="height:30%">
+  <div class="col-md-2">
+    <div class="imgBox" id="imageBox-1" ng-dblclick="toCanvas(0)">
+      <img id="myImg-0" src="" height="100%" width="100%"/>
+    </div>
+  </div>
+  <div class="col-md-2">
+    <div class="imgBox" id="imageBox-2" ng-dblclick="toCanvas(1)">
+      <img id="myImg-1" src="" height="100%" width="100%"/>
+    </div>
+  </div>
+  <div class="col-md-2">
+    <div class="imgBox" id="imageBox-3" ng-dblclick="toCanvas(2)">
+      <img id="myImg-2" src="" height="100%" width="100%"/>
+    </div>
+  </div>
+  <div class="col-md-2">
+    <div class="imgBox" id="imageBox-4" ng-dblclick="toCanvas(3)">
+      <img id="myImg-3" src="" height="100%" width="100%"/>
+    </div>
+  </div>
+  <div class="col-md-2 upload-column">
+    <input type="file" value=" " class="imgButton"></input>
+  </div>
+</div>
+</div>
+</body>
+</html>
